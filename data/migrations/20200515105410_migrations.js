@@ -13,7 +13,7 @@ exports.up = function (knex) {
             tbl.string('description', 255).notNullable();
             tbl.string('notes', 255);
             tbl.boolean('completed').defaultTo(false);
-            //foreign key
+            //foreign key from project
             tbl.integer("project_id")
                 .unsigned()
                 .notNullable()
