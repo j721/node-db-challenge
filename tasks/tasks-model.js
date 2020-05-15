@@ -20,9 +20,14 @@ function getTasks(){
 }
 
 // function getTasks(){
+//     return db.select ("*")
+//     .from("tasks")
+// }
+
+// function getTasks(){
 //     return db('tasks')
-//     .join('projects', 'projects.id', 'tasks.project_id')
 //     .select('projects.project_name', 'projects.description', 'tasks.description', 'tasks.notes')
+//     .join('projects', 'projects.id', 'tasks.project_id')
 // }
 
 function findById(id){

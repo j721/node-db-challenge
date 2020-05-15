@@ -23,14 +23,14 @@ function getProjects(){
 // }
 
 function findById(id){
-    return db.select ('projects')
+    return db ('projects')
     .where({id})
     .first();  
 }
 
 function addProjects(project){
     return db('projects')
-    .insert(project, "id")
+    .insert(project)
     .then(id=>{
         return findById(id[0])
     })
