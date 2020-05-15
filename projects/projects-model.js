@@ -8,15 +8,12 @@ module.exports ={
 
 
 
-// function getProjects(){
-//     return db.select ("*")
-//     .from("projects")
-// }
-
 function getProjects(){
-    return db('projects')
-    
+    return db.select ("*")
+    .from("projects")
 }
+
+ 
 
 // function findById(id){
 //     return db.select ('*')
