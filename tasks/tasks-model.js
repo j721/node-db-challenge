@@ -6,12 +6,24 @@ module.exports ={
     findById
 }
 
-function getTasks(){
-    return db.select ('projects.projects_name', 'projects.description', 'tasks.description', 'tasks.completed')
-    .from('tasks')
-    .join ('projects', 'project_id', 'projects.id')
+// function getTasks(){
+//     return db.select ('projects.projects_name', 'projects.description', 'tasks.description', 'tasks.completed')
+//     .from('tasks')
+//     .join ('projects', 'project_id', 'id')
 
+// }
+
+
+function getTasks(){
+    return db('tasks')
+    
 }
+
+// function getTasks(){
+//     return db('tasks')
+//     .join('projects', 'projects.id', 'tasks.project_id')
+//     .select('projects.project_name', 'projects.description', 'tasks.description', 'tasks.notes')
+// }
 
 function findById(id){
     return db('tasks')
