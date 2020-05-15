@@ -33,7 +33,7 @@ exports.up = function (knex) {
                 .unsigned()
                 .notNullable()
                 .references('id')
-                .inTable('store')
+                .inTable('projects')
                 .onDelete('CASCADE')
                 .onUpdate('CASCADE')
             //need foreign key that connects to resources table
@@ -41,7 +41,7 @@ exports.up = function (knex) {
                 .unsigned()
                 .notNullable()
                 .references('id')
-                .inTable('store')
+                .inTable('resources')
                 .onDelete('CASCADE')
                 .onUpdate('CASCADE')
         })
