@@ -40,11 +40,25 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] Explain the difference between `Relational Databases` and `SQL`.
 
+            *The data is grouped into rows and columns similar to an excel spreadsheet. A collection of rows is called a table. Each row represents a single record and can be made up of more than one column.
+             The “relation” comes from the RLs storing their data into tables. 
+
+            SQL (Standard Query Language) is the standard language used to manage databases and the data within them. SQL is a query language used to communicate with the database, such as requesting and manipulating data from the database that includes  relational databases as well.
+
 - [ ] Why do tables need a `primary key`?
+
+    * It’s a way to give each entry in the database a unique identifier.
+    * Tables have a primary key provides a unique identifier for a table/dataset that can used to help connect 
+    * Other tables/datasets by referencing that primary key.
+
 
 - [ ] What is the name given to a table column that references the primary key on another table.
 
+    Foreign key
+
 - [ ] What do we need in order to have a _many to many_ relationship between two tables.
+
+     creating  a junction table  A table that connects the data from the two tables in a many to many relationship. 
 
 ## Minimum Viable Product
 
